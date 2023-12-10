@@ -1835,6 +1835,73 @@ benefit__item-text {
   font-weight: 700;
   line-height: 42px;
   color: var(--black);
+  font-style: normal;
+}
+
+.reviews__customer {
+  font-style: normal;
+}
+
+@media screen and (max-width: 1760px) {
+  .reviews__box-content::after {
+    top: -165px;
+    right: 8px;
+  }
+  .reviews__img {
+    left: -33px;
+  }
+}
+
+@media screen and (max-width: 1422px) {
+  .reviews::before {
+    left: 9%;
+  }
+  .reviews__img {
+    display: none;
+  }
+  .reviews__wrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .reviews::before {
+    left: 126px;
+  }
+  .reviews__box-content::before {
+    left: -148px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews {
+    padding: 100px 0;
+  }
+  .reviews::before {
+    display: none;
+  }
+  .reviews__box-content::after {
+    top: -80px;
+    right: -25px;
+  }
+  .reviews__box-content::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews {
+    padding: 60px 0;
+  }
+  .reviews__box-content::after {
+    display: none;
+  }
+  .reviews__title {
+    margin-bottom: 30px;
+  }
+  .reviews__text {
+    margin-bottom: 40px;
+  }
 }
 /**********
 *** REVIEWS END ***
