@@ -456,6 +456,9 @@ svg:hover {
 }
 
 @media screen and (max-width: 765px) {
+  .footer {
+    padding-top: 60px;
+  }
   .footer__top {
     display: block;
     padding-bottom: 60px;
@@ -2014,16 +2017,54 @@ benefit__item-text {
   color: var(--blue);
   border: 2px solid var(--blue);
 }
+
+@media screen and (max-width: 1200px) {
+  .find {
+    padding: 190px 0;
+  }
+  .find::before {
+    top: 140px;
+  }
+  .find::after {
+    display: none;
+  }
+  .find__wrapper {
+    flex-direction: column;
+  }
+  .find__slogan {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .find {
+    padding: 60px 0 110px 0;
+  }
+  .find::before {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .find__input {
+    padding: 25px; 
+  }
+  .find__btn {
+    top: 100px;
+    right: 0;
+    width: 100%;
+  }
+  .find__form::after {
+    display: none;
+  }
+  .find__slogan {
+    margin-bottom: 30px;
+  }
+}
 /**********
 *** FIND END ***
 **********/
-/* .description__title {
-  color: var(--black);
-  font-size: 53px;
-  font-weight: 700;
-  line-height: 55px;
-  margin-bottom: 40px;
-} */
+
 @media screen and (max-width: 1020px) {
   .title {
     font-size: 52px;
