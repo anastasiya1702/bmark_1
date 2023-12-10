@@ -4,6 +4,7 @@ $(function () {
     $('.menu__btn, .menu__list').toggleClass('menu__list--active');
   });
 
+
   $('.search-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.search-tabs__top-item').removeClass('search-tabs__top-item--active');
@@ -13,6 +14,7 @@ $(function () {
     $($(this).attr('href')).addClass('search-tabs__content-item--active');
   });
 
+
   $('.properties-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.properties-tabs__top-item').removeClass('properties-tabs__top-item--active');
@@ -21,6 +23,7 @@ $(function () {
     $('.properties-tabs__content-item').removeClass('properties-tabs__content-item--active');
     $($(this).attr('href')).addClass('properties-tabs__content-item--active');
   });
+  
 
   $('.slider').slick({
     dots: false,
